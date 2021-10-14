@@ -35,7 +35,7 @@ class InputFilter extends Component {
           {colors
             .filter(({ name }) => name.includes(filterText))
             .map(({ name, hex }) => (
-              <li key={hex}>
+              <li data-testid="color" key={hex}>
                 <span style={{ background: hex }} className="color-display" />
                 {name}
               </li>
